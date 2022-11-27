@@ -54,13 +54,14 @@
 html,
 body {
   height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: var(--eerie-black);
-  overflow-x: hidden;
 }
 
 img,
@@ -151,12 +152,15 @@ h4 {
 // General style
 
 header {
+  position: relative;
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem var(--body-lr-padding);
-    position: relative;
+    transition: var(--transition-1);
+    width: 100%;
+    z-index: 99;
 
     .logo {
       font-weight: var(--fw-800);
@@ -175,6 +179,7 @@ header {
       height: 3rem;
       border-radius: var(--radius-circle);
       transition: var(--transition-3);
+      z-index: 1;
 
       span {
         width: 60%;
@@ -248,11 +253,10 @@ header {
   }
   .active__nav {
     background-color: var(--raisin-black);
-    width: 100%;
     position: fixed;
     top: 0;
-    z-index: 99;
-    transition: var(--transition-3);
+    left: 0;
+    transition: var(--transition-1);
   }
 
   .hero {
@@ -494,6 +498,12 @@ main {
                 a {
                   font-size: 0.7rem;
                   border-bottom: 1px solid var(--white);
+                  transition: var(--transition-1);
+
+                  &:hover {
+                    color: var(--roman-silver);
+                    border-color: var(--roman-silver);
+                  }
                 }
               }
               > h3 {
@@ -558,6 +568,128 @@ footer {
           }
         }
       }
+    }
+  }
+}
+
+// media quaries
+
+@media screen and (max-width: 1440px) {
+  :root {
+    --body-lr-padding: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+    --body-lr-padding: 3%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header {
+    .hero {
+      flex-direction: column;
+      gap: var(--section-padding);
+      .hero__text {
+        margin: 0;
+      }
+    }
+  }
+
+  main {
+    .services {
+      .service__title {
+        flex-direction: column;
+        align-items: flex-start;
+
+        div:first-child,
+        div:last-child {
+          width: auto;
+        }
+      }
+
+      .service__cards {
+        gap: 0;
+        flex-wrap: wrap;
+
+        .service__card {
+          width: 49%;
+          margin: 0.5rem 0;
+          gap: 1rem;
+        }
+      }
+    }
+
+    .digital__future {
+      .df__container {
+        flex-direction: column-reverse;
+
+        .df__text {
+          margin-top: 2rem;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 425px) {
+  :root {
+    --section-padding: 4rem;
+  }
+
+  h2 {
+    font-size: var(--fs-4);
+  }
+
+  header {
+    .hero {
+      .hero__text {
+        > h1 {
+          font-size: var(--fs-4);
+        }
+      }
+    }
+  }
+
+  main {
+    .services {
+      .service__title {
+        gap: 1rem;
+      }
+      .service__cards {
+        .service__card {
+          width: 100%;
+        }
+      }
+    }
+    .digital__future {
+      > h2 {
+        width: auto;
+      }
+    }
+
+    .work {
+      .project__container {
+        flex-direction: column;
+        > div {
+          width: auto;
+
+          .project {
+            .project__title {
+              align-items: flex-start;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    .footer {
+      flex-direction: column;
+      gap: 2rem;
     }
   }
 }

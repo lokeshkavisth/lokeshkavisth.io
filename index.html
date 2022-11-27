@@ -25,7 +25,7 @@
     <!-- header -->
     <header>
         <nav data-navbar>
-            <div class="logo">Lfolio</div>
+            <div class="logo" id="home">Lfolio</div>
 
             <div class="menu__icon" onclick="toggleMenu()">
                 <span></span>
@@ -34,12 +34,12 @@
 
             <div class="nav__links">
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">resume</a></li>
-                    <li><a href="#">services</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="#home">home</a></li>
+                    <!-- <li><a href="#resume">resume</a></li> -->
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <!-- <li><a href="#blog">blog</a></li> -->
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -66,7 +66,7 @@
 
     <!-- main -->
     <main>
-        <div class="services">
+        <div class="services" id="services">
             <div class="service__title">
                 <div>
                     <h4>services that i provide</h4>
@@ -85,7 +85,7 @@
             <div class="service__cards">
                 <div class="service__card">
                     <ion-icon name="desktop-outline"></ion-icon>
-                    <h3>website design</h3>
+                    <h3>web design</h3>
                     <p>
                         Website ravida surna eveti semen the conse tusio anivite dianne
                         one nivam acestion vue artin dictum.
@@ -105,7 +105,7 @@
 
                 <div class="service__card">
                     <ion-icon name="basket-outline"></ion-icon>
-                    <h3>e-Commerce</h3>
+                    <h3>eCommerce</h3>
                     <p>
                         Website ravida surna eveti semen the conse tusio anivite dianne
                         one nivam acestion vue artin dictum.
@@ -137,7 +137,7 @@
                         Pellentesque habitant morbi tristique senectus the neuse malesuada
                         nullam ac lorem miss the duru.
                     </p>
-                    <a href="#" class="btn">Join on discord</a>
+                    <a href="#" class="btn">Follow on twitter</a>
                 </div>
                 <div class="df__img">
                     <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
@@ -146,7 +146,7 @@
             </div>
         </div>
 
-        <div class="work">
+        <div class="work" id="portfolio">
             <h4>our works</h4>
             <h2>portfolio</h2>
 
@@ -154,13 +154,12 @@
                 <div>
                     <div class="project">
                         <div class="project__img">
-                            <img src="https://img.freepik.com/free-vector/book-mockup_1017-6282.jpg?w=826&t=st=1669361659~exp=1669362259~hmac=4815c97f61bf450c2816066fffe4709b79183dd936577f0c5951ec05f270901f"
-                                alt="project name" />
+                            <img src="./components/media/images/Neshvilla.jpg" alt="project name" />
                         </div>
                         <div class="project__title">
                             <div>
                                 <span>web designer <a href="#">see live</a></span>
-                                <h3>project title</h3>
+                                <h3>Neshvilla</h3>
                             </div>
                             <span>01</span>
                         </div>
@@ -168,29 +167,27 @@
 
                     <div class="project">
                         <div class="project__img">
-                            <img src="https://img.freepik.com/free-psd/white-textbook-cover-design-mockup_53876-89594.jpg?w=826&t=st=1669361577~exp=1669362177~hmac=03e996a3a19c967f2918b61fb3db4129e8de6cff2de927787e5162f9ec05b47d"
-                                alt="project name" />
+                            <img src="./components/media/images/cyclone.png" alt="project name" />
                         </div>
                         <div class="project__title">
                             <div>
                                 <span>web designer <a href="#">see live</a></span>
-                                <h3>project title</h3>
+                                <h3>cyclone</h3>
                             </div>
-                            <span>01</span>
+                            <span>02</span>
                         </div>
                     </div>
 
                     <div class="project">
                         <div class="project__img">
-                            <img src="https://img.freepik.com/free-psd/white-mug-blue-background-mockup_125540-1421.jpg?w=1380&t=st=1669361788~exp=1669362388~hmac=dc8017dd77b0c1ca26c6ac40f1a8fb1adb693976908851063859d537fd95e4ce"
-                                alt="project name" />
+                            <img src="./components/media/images/developer-portfolio.png" alt="project name" />
                         </div>
                         <div class="project__title">
                             <div>
                                 <span>web designer <a href="#">see live</a></span>
-                                <h3>project title</h3>
+                                <h3>someone</h3>
                             </div>
-                            <span>01</span>
+                            <span>03</span>
                         </div>
                     </div>
                 </div>
@@ -198,43 +195,40 @@
                 <div>
                     <div class="project">
                         <div class="project__img">
-                            <img src="https://img.freepik.com/free-psd/black-ink-text-embossed_125540-1111.jpg?w=1380&t=st=1669361867~exp=1669362467~hmac=f6e2daacc8fe7cfba6456795314a11493376d0007efd3c27388d206f4a22b8e3"
-                                alt="project name" />
+                            <img src="./components/media/images/pet-site.png" alt="project name" />
                         </div>
                         <div class="project__title">
                             <div>
                                 <span>web designer <a href="#">see live</a></span>
-                                <h3>project title</h3>
+                                <h3>kuttalelo</h3>
                             </div>
-                            <span>01</span>
+                            <span>04</span>
                         </div>
                     </div>
 
                     <div class="project">
                         <div class="project__img">
-                            <img src="https://img.freepik.com/free-vector/hot-drink-paper-cup-with-mockup-sleeve-vector_53876-61823.jpg?w=826&t=st=1669361607~exp=1669362207~hmac=24647676b973111c41a36f096b059b7538e1a61c5dcd118ddaa68bc08fa596c8"
-                                alt="project name" />
+                            <img src="./components/media/images/nft-portfolio.png" alt="project name" />
                         </div>
                         <div class="project__title">
                             <div>
                                 <span>web designer <a href="#">see live</a></span>
-                                <h3>project title</h3>
+                                <h3>nft portfolio</h3>
                             </div>
-                            <span>01</span>
+                            <span>05</span>
                         </div>
                     </div>
 
                     <div class="project">
                         <div class="project__img">
-                            <img src="https://img.freepik.com/free-psd/matte-flyer-mock-up-collecti_1307-154.jpg?w=1380&t=st=1669362913~exp=1669363513~hmac=9afc499fd068e5b5c15f2fdc0b6820dd2a815d832dc4da0b7f836b737474f9b8"
-                                alt="project name" />
+                            <img src="./components/media/images/modern-portfolio.png" alt="project name" />
                         </div>
                         <div class="project__title">
                             <div>
                                 <span>web designer <a href="#">see live</a></span>
-                                <h3>project title</h3>
+                                <h3>portfolio</h3>
                             </div>
-                            <span>01</span>
+                            <span>06</span>
                         </div>
                     </div>
                 </div>
@@ -248,7 +242,7 @@
     <!-- footer -->
     <footer>
 
-        <div class="footer">
+        <div class="footer" id="contact">
 
 
 
@@ -264,16 +258,16 @@
 
             <div class="footer__links">
                 <ul>
-                    <li><a href="#">
+                    <li><a href="https://twitter.com/lokeshkavisth">
                             <ion-icon name="logo-twitter"></ion-icon>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="https://instagram.com/lokeshkavisth">
                             <ion-icon name="logo-instagram"></ion-icon>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="https://github.com/lokeshkavisth">
                             <ion-icon name="logo-github"></ion-icon>
                         </a></li>
-                    <li><a href="#">
+                    <li><a href="https://dribbble.com/lokeshkavisth">
                             <ion-icon name="logo-dribbble"></ion-icon>
                         </a></li>
                 </ul>
