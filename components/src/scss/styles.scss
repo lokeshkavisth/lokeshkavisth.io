@@ -152,15 +152,20 @@ h4 {
 // General style
 
 header {
-  position: relative;
   nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem var(--body-lr-padding);
     transition: var(--transition-1);
-    width: 100%;
     z-index: 99;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--eerie-black);
+
+    // position: relative;
 
     .logo {
       font-weight: var(--fw-800);
@@ -253,9 +258,6 @@ header {
   }
   .active__nav {
     background-color: var(--raisin-black);
-    position: fixed;
-    top: 0;
-    left: 0;
     transition: var(--transition-1);
   }
 
@@ -263,6 +265,7 @@ header {
     display: flex;
     align-items: center;
     padding: 0 var(--body-lr-padding);
+    margin-top: calc(2rem + var(--section-padding));
 
     .hero__img {
       margin: 0 auto;
@@ -644,6 +647,12 @@ footer {
   }
 
   header {
+    nav {
+      .nav__links {
+        top: 100%;
+      }
+    }
+
     .hero {
       .hero__text {
         > h1 {
