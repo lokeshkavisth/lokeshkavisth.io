@@ -1,292 +1,352 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Favicon -->
 
+    <link
+      rel="shortcut icon"
+      href="./components/media/favicon/favicon.ico"
+      type="image/x-icon"
+    />
 
-    <link rel="shortcut icon" href="./components/media/favicon/favicon.ico" type="image/x-icon">
-
-
-
-    <meta name="title" content="Lokesh Kavisth - Web Developer & Designer">
-    <meta name="description" content="I am frontend web dev.">
-
+    <meta name="title" content="Lokesh Kavisth - Web Developer & Designer" />
+    <meta name="description" content="I am frontend web dev." />
 
     <!-- Css styles -->
     <link rel="stylesheet" href="./dist/styles.css" />
     <title>Lokesh Kavisth - Frontend web developer & designer</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- header -->
     <header>
-        <nav data-navbar>
-            <div class="logo" id="home">Lfolio</div>
+      <i id="home"></i>
+      <nav data-navbar>
+        <div class="logo">Lfolio</div>
 
-            <div class="menu__icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-            </div>
-
-            <div class="nav__links">
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <!-- <li><a href="#resume">resume</a></li> -->
-                    <li><a href="#services">services</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <!-- <li><a href="#blog">blog</a></li> -->
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-        <!-- hero -->
-
-        <div class="hero">
-            <div class="hero__img">
-                <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                    alt="Lokesh Kavisth" />
-            </div>
-
-            <div class="hero__text">
-                <h1>lokesh kavisth</h1>
-                <h4>creative web developer & designer</h4>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                    nesciunt similique voluptates. sit amet consectetur adipisicing
-                    elit. Culpa nesciunt similique voluptates.
-                </p>
-            </div>
+        <div class="menu__icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
         </div>
+
+        <div class="nav__links">
+          <ul>
+            <li><a href="#home">home</a></li>
+            <!-- <li><a href="#resume">resume</a></li> -->
+            <li><a href="#services">services</a></li>
+            <li><a href="#portfolio">portfolio</a></li>
+            <!-- <li><a href="#blog">blog</a></li> -->
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- hero -->
+
+      <div class="hero">
+        <div class="hero__img">
+          <img
+            src="./components/media/images/lokesh-hero-img.png"
+            alt="Lokesh Kavisth"
+          />
+        </div>
+
+        <div class="hero__text">
+          <h1>lokesh kavisth</h1>
+          <h4>creative web developer & designer</h4>
+          <p>
+            Hi, I’m Lokesh Kavisth and I am creative web developer & designer. I
+            like to craft solid and scalable frontend products with great user
+            experiences.
+          </p>
+        </div>
+      </div>
     </header>
 
     <!-- main -->
     <main>
-        <div class="services" id="services">
-            <div class="service__title">
-                <div>
-                    <h4>services that i provide</h4>
-                    <h2>services</h2>
-                </div>
-                <div>
-                    <p>
-                        Phasellus et lacus suscipit congue nisl the volutpat magna. donec
-                        miss the drana risus tincidunt convallis velit orci congue tortor
-                        eu dignissim ipsum suam non odio. Pellenta esuntion miss the
-                        imperdiet metus ornare.
-                    </p>
-                </div>
-            </div>
-
-            <div class="service__cards">
-                <div class="service__card">
-                    <ion-icon name="desktop-outline"></ion-icon>
-                    <h3>web design</h3>
-                    <p>
-                        Website ravida surna eveti semen the conse tusio anivite dianne
-                        one nivam acestion vue artin dictum.
-                    </p>
-                    <span>01</span>
-                </div>
-
-                <div class="service__card">
-                    <ion-icon name="podium-outline"></ion-icon>
-                    <h3>SEO Marketing</h3>
-                    <p>
-                        Website ravida surna eveti semen the conse tusio anivite dianne
-                        one nivam acestion vue artin dictum.
-                    </p>
-                    <span>02</span>
-                </div>
-
-                <div class="service__card">
-                    <ion-icon name="basket-outline"></ion-icon>
-                    <h3>eCommerce</h3>
-                    <p>
-                        Website ravida surna eveti semen the conse tusio anivite dianne
-                        one nivam acestion vue artin dictum.
-                    </p>
-                    <span>03</span>
-                </div>
-            </div>
+      <div class="services" id="services">
+        <div class="service__title">
+          <div>
+            <h4>services that i provide</h4>
+            <h2>services</h2>
+          </div>
+          <div>
+            <p>
+              Phasellus et lacus suscipit congue nisl the volutpat magna. donec
+              miss the drana risus tincidunt convallis velit orci congue tortor
+              eu dignissim ipsum suam non odio. Pellenta esuntion miss the
+              imperdiet metus ornare.
+            </p>
+          </div>
         </div>
 
-        <div class="digital__future">
-            <h4>i make the future</h4>
-            <h2>i develop & create digital future.</h2>
+        <div class="service__cards">
+          <div class="service__card">
+            <ion-icon name="desktop-outline"></ion-icon>
+            <h3>CMS & Code</h3>
+            <p>
+              Website ravida surna eveti semen the conse tusio anivite dianne
+              one nivam acestion vue artin dictum.
+            </p>
+            <span>01</span>
+          </div>
 
-            <div class="df__container">
-                <div class="df__text">
-                    <p>
-                        Pellentesque magna magna semper dapibus felis necatin aliuen
-                        risus. Pellentesque habitant morbi senectus dictum.
-                    </p>
-                    <p>
-                        Web design magna magna semper dapibus felis necatin aliuen risus.
-                        Pellentesque habitant morbi tristique senectus the neuse malesuada
-                        nullam ac lorem miss the duru.
-                    </p>
-                    <p>
-                        Pellentesque magna magna semper dapibus felis necatin aliuen
-                        risus. Pellentesque habitant morbi senectus dictum. Web design
-                        magna magna semper dapibus felis necatin aliuen risus.
-                        Pellentesque habitant morbi tristique senectus the neuse malesuada
-                        nullam ac lorem miss the duru.
-                    </p>
-                    <a href="#" class="btn">Follow on twitter</a>
-                </div>
-                <div class="df__img">
-                    <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80"
-                        alt="Lokesh Kavisth" />
-                </div>
-            </div>
+          <div class="service__card">
+            <ion-icon name="podium-outline"></ion-icon>
+            <h3>SEO Marketing</h3>
+            <p>
+              Website ravida surna eveti semen the conse tusio anivite dianne
+              one nivam acestion vue artin dictum.
+            </p>
+            <span>02</span>
+          </div>
+
+          <div class="service__card">
+            <ion-icon name="basket-outline"></ion-icon>
+            <h3>eCommerce</h3>
+            <p>
+              Website ravida surna eveti semen the conse tusio anivite dianne
+              one nivam acestion vue artin dictum.
+            </p>
+            <span>03</span>
+          </div>
         </div>
+      </div>
 
-        <div class="work" id="portfolio">
-            <h4>our works</h4>
-            <h2>portfolio</h2>
+      <div class="digital__future">
+        <h4>i make the future</h4>
+        <h2>i develop & create digital future.</h2>
 
-            <div class="project__container">
-                <div>
-                    <div class="project">
-                        <div class="project__img">
-                            <img src="./components/media/images/Neshvilla.jpg" alt="project name" />
-                        </div>
-                        <div class="project__title">
-                            <div>
-                                <span>web designer <a href="#">see live</a></span>
-                                <h3>Neshvilla</h3>
-                            </div>
-                            <span>01</span>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project__img">
-                            <img src="./components/media/images/cyclone.png" alt="project name" />
-                        </div>
-                        <div class="project__title">
-                            <div>
-                                <span>web designer <a href="#">see live</a></span>
-                                <h3>cyclone</h3>
-                            </div>
-                            <span>02</span>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project__img">
-                            <img src="./components/media/images/developer-portfolio.png" alt="project name" />
-                        </div>
-                        <div class="project__title">
-                            <div>
-                                <span>web designer <a href="#">see live</a></span>
-                                <h3>someone</h3>
-                            </div>
-                            <span>03</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div>
-                    <div class="project">
-                        <div class="project__img">
-                            <img src="./components/media/images/pet-site.png" alt="project name" />
-                        </div>
-                        <div class="project__title">
-                            <div>
-                                <span>web designer <a href="#">see live</a></span>
-                                <h3>kuttalelo</h3>
-                            </div>
-                            <span>04</span>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project__img">
-                            <img src="./components/media/images/nft-portfolio.png" alt="project name" />
-                        </div>
-                        <div class="project__title">
-                            <div>
-                                <span>web designer <a href="#">see live</a></span>
-                                <h3>nft portfolio</h3>
-                            </div>
-                            <span>05</span>
-                        </div>
-                    </div>
-
-                    <div class="project">
-                        <div class="project__img">
-                            <img src="./components/media/images/modern-portfolio.png" alt="project name" />
-                        </div>
-                        <div class="project__title">
-                            <div>
-                                <span>web designer <a href="#">see live</a></span>
-                                <h3>portfolio</h3>
-                            </div>
-                            <span>06</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a href="#" class="btn">Check on github</a>
+        <div class="df__container">
+          <div class="df__text">
+            <p>
+              Pellentesque magna magna semper dapibus felis necatin aliuen
+              risus. Pellentesque habitant morbi senectus dictum.
+            </p>
+            <p>
+              Web design magna magna semper dapibus felis necatin aliuen risus.
+              Pellentesque habitant morbi tristique senectus the neuse malesuada
+              nullam ac lorem miss the duru.
+            </p>
+            <p>
+              Pellentesque magna magna semper dapibus felis necatin aliuen
+              risus. Pellentesque habitant morbi senectus dictum. Web design
+              magna magna semper dapibus felis necatin aliuen risus.
+              Pellentesque habitant morbi tristique senectus the neuse malesuada
+              nullam ac lorem miss the duru.
+            </p>
+            <a href="https://twitter.com/lokeshkavisth" class="btn"
+              >Follow on twitter</a
+            >
+          </div>
+          <div class="df__img">
+            <img
+              src="./components/media/images/lokesh-about-img.png"
+              alt="Lokesh Kavisth"
+            />
+          </div>
         </div>
+      </div>
+
+      <div class="work" id="portfolio">
+        <h4>our works</h4>
+        <h2>portfolio</h2>
+
+        <div class="project__container">
+          <div>
+            <div class="project">
+              <div class="project__img">
+                <img
+                  src="./components/media/images/Neshvilla.jpg"
+                  alt="project name"
+                />
+              </div>
+              <div class="project__title">
+                <div>
+                  <span
+                    >web designer
+                    <a href="https://lokeshkavisth.github.io/Neshvilla/"
+                      >see live</a
+                    ></span
+                  >
+                  <h3>Neshvilla</h3>
+                </div>
+                <span>01</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project__img">
+                <img
+                  src="./components/media/images/cyclone.png"
+                  alt="project name"
+                />
+              </div>
+              <div class="project__title">
+                <div>
+                  <span
+                    >web designer
+                    <a href="https://lokeshkavisth.github.io/cyclone/"
+                      >see live</a
+                    ></span
+                  >
+                  <h3>cyclone</h3>
+                </div>
+                <span>02</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project__img">
+                <img
+                  src="./components/media/images/developer-portfolio.png"
+                  alt="project name"
+                />
+              </div>
+              <div class="project__title">
+                <div>
+                  <span
+                    >web designer
+                    <a href="https://lokeshkavisth.github.io/portfolio/"
+                      >see live</a
+                    ></span
+                  >
+                  <h3>someone</h3>
+                </div>
+                <span>03</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="project">
+              <div class="project__img">
+                <img
+                  src="./components/media/images/pet-site.png"
+                  alt="project name"
+                />
+              </div>
+              <div class="project__title">
+                <div>
+                  <span
+                    >web designer
+                    <a
+                      href="https://lokeshkavisth.github.io/pet-selling-website/"
+                      >see live</a
+                    ></span
+                  >
+                  <h3>kuttalelo</h3>
+                </div>
+                <span>04</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project__img">
+                <img
+                  src="./components/media/images/portfolio.png"
+                  alt="project name"
+                />
+              </div>
+              <div class="project__title">
+                <div>
+                  <span
+                    >web designer
+                    <a
+                      href="https://lokeshkavisth.github.io/portfolio-by-lokeshkavisth/index.html"
+                      >see live</a
+                    ></span
+                  >
+                  <h3>portfolio</h3>
+                </div>
+                <span>05</span>
+              </div>
+            </div>
+
+            <div class="project">
+              <div class="project__img">
+                <img
+                  src="./components/media/images/modern-portfolio.png"
+                  alt="project name"
+                />
+              </div>
+              <div class="project__title">
+                <div>
+                  <span
+                    >web designer
+                    <a href="https://lokeshkavisth.github.io/personal-website/"
+                      >see live</a
+                    ></span
+                  >
+                  <h3>portfolio</h3>
+                </div>
+                <span>06</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/lokeshkavisth" class="btn"
+          >Check on github</a
+        >
+      </div>
     </main>
-
-
 
     <!-- footer -->
     <footer>
-
-        <div class="footer" id="contact">
-
-
-
-            <div class="get__in__touch">
-                <h3>get in touch</h3>
-                <a href="#">lokeshkavisth.webdev@gmail.com</a>
-            </div>
-
-            <div class="location">
-                <h3>locations</h3>
-                <a href="#">jaipur rajasthan - india</a>
-            </div>
-
-            <div class="footer__links">
-                <ul>
-                    <li><a href="https://twitter.com/lokeshkavisth">
-                            <ion-icon name="logo-twitter"></ion-icon>
-                        </a></li>
-                    <li><a href="https://instagram.com/lokeshkavisth">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                        </a></li>
-                    <li><a href="https://github.com/lokeshkavisth">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a></li>
-                    <li><a href="https://dribbble.com/lokeshkavisth">
-                            <ion-icon name="logo-dribbble"></ion-icon>
-                        </a></li>
-                </ul>
-            </div>
-
+      <div class="footer" id="contact">
+        <div class="get__in__touch">
+          <h3>get in touch</h3>
+          <a href="#">lokeshkavisth.webdev@gmail.com</a>
         </div>
 
+        <div class="location">
+          <h3>locations</h3>
+          <a href="#">jaipur rajasthan - india</a>
+        </div>
+
+        <div class="footer__links">
+          <ul>
+            <li>
+              <a href="https://twitter.com/lokeshkavisth">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/kavisthlokesh">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/lokeshkavisth">
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UC4cEidDFc_8yz61uIQzzAqg"
+              >
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
 
-
-
-
-
-
     <!-- scripts -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./components/src/js/script.js"></script>
-</body>
-
+  </body>
 </html>

@@ -27,10 +27,6 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s;
-  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
-  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
-  --cubic-bounce: 0.6scubic-bezier(0.68, -0.55, 0.265, 1.55);
-  --cubic-ease-out: 700mscubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 * {
@@ -127,6 +123,16 @@ h4 {
 ::-webkit-scrollbar-thumb {
   background-color: var(--white);
   border-radius: 1.25rem;
+}
+
+::-moz-selection {
+  color: var(--black);
+  background: var(--white);
+}
+
+::selection {
+  color: var(--black);
+  background: var(--white);
 }
 
 .btn {
