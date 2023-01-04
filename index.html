@@ -11,6 +11,14 @@
       href="./components/media/favicon/favicon.ico"
       type="image/x-icon"
     />
+    <!-- Font Awesome Icons  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <meta name="title" content="Lokesh Kavisth - Web Developer & Designer" />
     <meta name="description" content="I am frontend web dev." />
@@ -34,12 +42,12 @@
 
         <div class="nav__links">
           <ul>
-            <li><a href="#home">home</a></li>
-            <!-- <li><a href="#resume">resume</a></li> -->
-            <li><a href="#services">services</a></li>
-            <li><a href="#portfolio">portfolio</a></li>
-            <!-- <li><a href="#blog">blog</a></li> -->
-            <li><a href="#contact">contact</a></li>
+            <li><a href="#home" onclick="linkClicked()">home</a></li>
+            <!-- <li><a href="#resume" onclick="linkClicked()">resume</a></li> -->
+            <li><a href="#services" onclick="linkClicked()">services</a></li>
+            <li><a href="#portfolio" onclick="linkClicked()">portfolio</a></li>
+            <!-- <li><a href="#blog" onclick="linkClicked()">blog</a></li> -->
+            <li><a href="#contact" onclick="linkClicked()">contact</a></li>
           </ul>
         </div>
       </nav>
@@ -56,10 +64,10 @@
 
         <div class="hero__text">
           <h1>lokesh kavisth</h1>
-          <h4>creative web developer & designer</h4>
+          <h4>passionate web developer & designer</h4>
           <p>
-            Hi, I’m Lokesh Kavisth and I am creative web developer & designer. I
-            like to craft solid and scalable frontend products with great user
+            Hi, I’m Lokesh Kavisth frontend web developer & designer. I like to
+            craft solid and scalable frontend products with great user
             experiences.
           </p>
         </div>
@@ -76,10 +84,19 @@
           </div>
           <div>
             <p>
-              Phasellus et lacus suscipit congue nisl the volutpat magna. donec
-              miss the drana risus tincidunt convallis velit orci congue tortor
-              eu dignissim ipsum suam non odio. Pellenta esuntion miss the
-              imperdiet metus ornare.
+              Are you looking to create a new website or update your existing
+              one? I can help you bring your vision to life. My services include
+              <b
+                >Website Development, Design, Audits(Updates, bug-fixing
+                etc.)</b
+              >
+              and more. I specialize in creating beautiful, intuitive, and
+              responsive designs that provide a seamless and consistent
+              experience across all devices. Whether you are a small business
+              owner, artist, or freelancer, I can help you to create a
+              professional online presence that showcases your work and engages
+              your audience. Contact me today to learn more about how I can help
+              you achieve your web development goals.
             </p>
           </div>
         </div>
@@ -87,30 +104,30 @@
         <div class="service__cards">
           <div class="service__card">
             <ion-icon name="desktop-outline"></ion-icon>
-            <h3>CMS & Code</h3>
+            <h3>Responsive</h3>
             <p>
-              Website ravida surna eveti semen the conse tusio anivite dianne
-              one nivam acestion vue artin dictum.
+              Get fully responsive and cross platform compatible website for all
+              devices like mobile, tablet, laptop and more.
             </p>
             <span>01</span>
           </div>
 
           <div class="service__card">
-            <ion-icon name="podium-outline"></ion-icon>
-            <h3>SEO Marketing</h3>
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Development</h3>
             <p>
-              Website ravida surna eveti semen the conse tusio anivite dianne
-              one nivam acestion vue artin dictum.
+              I develop and design websites with latest and trending technology.
+              I can turn your design into clean and efficient code.
             </p>
             <span>02</span>
           </div>
 
           <div class="service__card">
-            <ion-icon name="basket-outline"></ion-icon>
-            <h3>eCommerce</h3>
+            <ion-icon name="build-outline"></ion-icon>
+            <h3>Audits</h3>
             <p>
-              Website ravida surna eveti semen the conse tusio anivite dianne
-              one nivam acestion vue artin dictum.
+              I can revamp your website, fix bugs, improve design, do SEO, add
+              new features and much more
             </p>
             <span>03</span>
           </div>
@@ -139,7 +156,10 @@
               Pellentesque habitant morbi tristique senectus the neuse malesuada
               nullam ac lorem miss the duru.
             </p>
-            <a href="https://twitter.com/lokeshkavisth" class="btn"
+            <a
+              href="https://twitter.com/lokeshkavisth"
+              class="btn"
+              target="_blank"
               >Follow on twitter</a
             >
           </div>
@@ -169,7 +189,9 @@
                 <div>
                   <span
                     >web designer
-                    <a href="https://lokeshkavisth.github.io/Neshvilla/"
+                    <a
+                      href="https://lokeshkavisth.github.io/Neshvilla/"
+                      target="_blank"
                       >see live</a
                     ></span
                   >
@@ -190,7 +212,9 @@
                 <div>
                   <span
                     >web designer
-                    <a href="https://lokeshkavisth.github.io/cyclone/"
+                    <a
+                      href="https://lokeshkavisth.github.io/cyclone/"
+                      target="_blank"
                       >see live</a
                     ></span
                   >
@@ -211,7 +235,9 @@
                 <div>
                   <span
                     >web designer
-                    <a href="https://lokeshkavisth.github.io/portfolio/"
+                    <a
+                      href="https://lokeshkavisth.github.io/portfolio/"
+                      target="_blank"
                       >see live</a
                     ></span
                   >
@@ -236,6 +262,7 @@
                     >web designer
                     <a
                       href="https://lokeshkavisth.github.io/pet-selling-website/"
+                      target="_blank"
                       >see live</a
                     ></span
                   >
@@ -258,6 +285,7 @@
                     >web designer
                     <a
                       href="https://lokeshkavisth.github.io/portfolio-by-lokeshkavisth/index.html"
+                      target="_blank"
                       >see live</a
                     ></span
                   >
@@ -278,7 +306,9 @@
                 <div>
                   <span
                     >web designer
-                    <a href="https://lokeshkavisth.github.io/personal-website/"
+                    <a
+                      href="https://lokeshkavisth.github.io/personal-website/"
+                      target="_blank"
                       >see live</a
                     ></span
                   >
@@ -289,7 +319,7 @@
             </div>
           </div>
         </div>
-        <a href="https://github.com/lokeshkavisth" class="btn"
+        <a href="https://github.com/lokeshkavisth" class="btn" target="_blank"
           >Check on github</a
         >
       </div>
@@ -300,7 +330,9 @@
       <div class="footer" id="contact">
         <div class="get__in__touch">
           <h3>get in touch</h3>
-          <a href="#">lokeshkavisth.webdev@gmail.com</a>
+          <a href="mailto:lokeshkavisth.webdev.com"
+            >lokeshkavisth.webdev@gmail.com</a
+          >
         </div>
 
         <div class="location">
@@ -311,25 +343,23 @@
         <div class="footer__links">
           <ul>
             <li>
-              <a href="https://twitter.com/lokeshkavisth">
+              <a href="https://twitter.com/lokeshkavisth" target="_blank">
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="https://instagram.com/kavisthlokesh">
+              <a href="https://instagram.com/kavisthlokesh" target="_blank">
                 <ion-icon name="logo-instagram"></ion-icon>
               </a>
             </li>
             <li>
-              <a href="https://github.com/lokeshkavisth">
+              <a href="https://github.com/lokeshkavisth" target="_blank">
                 <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
             <li>
-              <a
-                href="https://www.youtube.com/channel/UC4cEidDFc_8yz61uIQzzAqg"
-              >
-                <ion-icon name="logo-youtube"></ion-icon>
+              <a href="https://lokeshkavisth.hashnode.dev/" target="_blank">
+                <i class="fa-brands fa-hashnode"></i>
               </a>
             </li>
           </ul>
