@@ -6,7 +6,6 @@ $(document).ready(function () {
 });
 
 function linkClicked() {
-  console.log("hello");
   $(".menu__icon").removeClass("menuX__icon");
   $(".nav__links").removeClass("menu__toggle");
 }

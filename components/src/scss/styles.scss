@@ -27,6 +27,7 @@
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --transition-3: 0.3s;
+  --transition-4: 0.85s cubic-bezier(0.25, -0.96, 0.25, 1.53);
 }
 
 * {
@@ -146,9 +147,9 @@ h4 {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    border: 2px solid var(--white_a5);
+    border: 2px solid var(--white_a10);
     border-radius: var(--radius-circle);
-    transition: var(--transition-2);
+    transition: var(--transition-4);
   }
 
   &:hover::before {
